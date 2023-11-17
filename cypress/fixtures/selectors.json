@@ -1,0 +1,49 @@
+{
+  "login": {
+    "modal": {
+      "username": "#loginUsername",
+      "password": "#loginPassword",
+      "forgot_password": "#emailHelp a, #forgotPasswordBtn",
+      "login_button": "div.form-check + div button",
+      "remember_me": "#rememberMeCheckBox",
+      "sign_up": "div.form-check + div a"
+    }
+
+  },
+  "landing": {
+    "nav": {
+      "login": "div.desktop-menu [href$=login]"
+    }
+  },
+  "dashboard": {
+    "order_summary": {
+      "unfulfilled": "a[href*=nav-unfulfilledunfulfilled]",
+      "fulfilled": "a[href*=nav-fulfilled]"
+    },
+    "left_menu": {},
+    "top_menu": {},
+    "tracking_updates": {},
+    "recent_shipment": {}
+  },
+  "orders": {
+    "filter": {
+      "search_box": "#searchBar",
+      "search_button": "#searchBar+button",
+      "saved_filter": "button#dropdownMenuLink",
+      "filters": "#orderFilterBtnId",
+      "number_of_orders": "div.desktop-tab-statuses #displayNoOfOrderes",
+      "canada_destination": "#caShippingDestinationCheckbox",
+      "us_destination": "#usShippingDestinationCheckbox",
+      "world_destination": "#restShippingDestinationCheckbox",
+      "apply_button": "#orderFilterBtnIdDiv button.btn-primary",
+      "cancel_button": "#orderFilterBtnIdDiv button.btn-tertiary"
+    },
+    "tabs": {
+      "all": "div.desktop-tab-statuses a:contains(All)",
+      "unfulfilled": "div.desktop-tab-statuses a:contains(Unfulfilled)",
+      "fulfilled": "div.desktop-tab-statuses a:contains(Fulfilled)",
+      "cancelled": "div.desktop-tab-statuses a:contains(Cancelled)"
+
+    }
+  }
+}
