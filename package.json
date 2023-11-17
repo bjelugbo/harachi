@@ -1,6 +1,29 @@
 {
   "name": "harachi",
   "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "googleapis": "^128.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/support/**/*.{js,ts}",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/report.html"
+    },
+    "messages": {
+      "enabled": true
+    }
   }
 }
